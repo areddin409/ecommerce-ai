@@ -57,17 +57,17 @@
 
 ## 🏗️ Tech Stack
 
-| Category | Technologies |
-|----------|-------------|
-| **Framework** | Next.js 16, React 19 |
-| **Language** | TypeScript |
-| **Styling** | Tailwind CSS v4, shadcn/ui |
-| **CMS** | Sanity CMS with Live API |
-| **Authentication** | Clerk |
-| **AI** | Vercel AI SDK, AgentKit, Claude/GPT/Cohere |
-| **Payments** | Stripe |
-| **State Management** | Zustand |
-| **Tooling** | Biome, pnpm |
+| Category             | Technologies                               |
+| -------------------- | ------------------------------------------ |
+| **Framework**        | Next.js 16, React 19                       |
+| **Language**         | TypeScript                                 |
+| **Styling**          | Tailwind CSS v4, shadcn/ui                 |
+| **CMS**              | Sanity CMS with Live API                   |
+| **Authentication**   | Clerk                                      |
+| **AI**               | Vercel AI SDK, AgentKit, Claude/GPT/Cohere |
+| **Payments**         | Stripe                                     |
+| **State Management** | Zustand                                    |
+| **Tooling**          | Biome, pnpm                                |
 
 ---
 
@@ -84,39 +84,43 @@
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd ecommerce-ai
    ```
 
 2. **Install dependencies**
+
    ```bash
    pnpm install
    ```
 
 3. **Set up environment variables**
-   
+
    Create a `.env.local` file with the following:
+
    ```env
    # Sanity
    NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
    NEXT_PUBLIC_SANITY_DATASET=production
    SANITY_API_TOKEN=your_api_token
-   
+
    # Clerk
    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
    CLERK_SECRET_KEY=your_secret_key
-   
+
    # Stripe
    NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
    STRIPE_SECRET_KEY=your_secret_key
    STRIPE_WEBHOOK_SECRET=your_webhook_secret
-   
+
    # AI Provider (e.g., Anthropic)
    ANTHROPIC_API_KEY=your_api_key
    ```
 
 4. **Run the development server**
+
    ```bash
    pnpm dev
    ```
@@ -151,6 +155,7 @@ ecommerce-ai/
 ### Shopping Assistant
 
 The AI shopping assistant helps customers:
+
 - Search for products using natural language
 - Get personalized recommendations
 - Track order status
@@ -159,6 +164,7 @@ The AI shopping assistant helps customers:
 ### Admin Dashboard
 
 AI-powered insights for store owners:
+
 - Sales trend analysis
 - Inventory recommendations
 - Customer behavior insights
@@ -171,6 +177,7 @@ AI-powered insights for store owners:
 ### Sanity Studio
 
 Access the embedded Sanity Studio at `/studio` to manage:
+
 - Products and categories
 - Orders and customers
 - Site content and settings
@@ -179,6 +186,7 @@ Access the embedded Sanity Studio at `/studio` to manage:
 ### Webhooks
 
 Configure webhooks for:
+
 - **Stripe**: Order creation and payment processing
 - **Sanity**: Real-time content updates
 
