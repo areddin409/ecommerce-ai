@@ -12,7 +12,7 @@ import { ORDER_STATUS_SANITY_LIST } from "@/lib/constants/orderStatus"
  * @field orderNumber - Unique order identifier (required, read-only, auto-generated)
  * @field items - Array of ordered products with quantity and purchase price
  * @field total - Total order amount in GBP (read-only, calculated)
- * @field status - Order status (paid, processing, shipped, delivered, cancelled)
+ * @field status - Order status (paid, shipped, delivered, cancelled)
  * @field customer - Reference to customer document
  * @field clerkUserId - Clerk authentication ID (read-only)
  * @field email - Customer email (read-only)
